@@ -27,10 +27,16 @@ class HelloWorld {
          Console.WriteLine(first * sec);
      }
      else if (op == "/"){
-         Console.WriteLine(first / sec);
+         if (sec == 0){
+             Console.WriteLine("Dzielisz przez zero");
+         }
+         else{
+             Console.WriteLine(first / sec);
+         }
      }
      else{
          Console.WriteLine("Wprowadzono nieprawidłowy operator");
      } 
+     Console.ReadKey();
   }
 }

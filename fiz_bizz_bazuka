@@ -1,0 +1,26 @@
+internal class Program
+{
+    private static void Main(string[] args)
+    {
+        string[] tab = {"Falbanki", "Bazuka", "ostob", "fob"};
+        char ef = 'F';
+        char be = 'B';
+        foreach (string word in tab)
+        {
+            if (word[0] == ef || word[0] == char.ToLower(ef))
+            {
+                Console.WriteLine("Fizz");
+            }
+            else if (word[word.Length - 1] == be || word[word.Length - 1] == char.ToLower(be))
+            {
+                Console.WriteLine("Bizz");
+            }
+            else
+            {
+                Console.WriteLine(word);
+            }
+        }
+        Console.ReadKey();
+
+    }
+}
